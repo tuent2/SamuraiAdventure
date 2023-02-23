@@ -12,10 +12,10 @@ TagManager:
   - Water
   - UI
   - BackGround
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Floor
+  - Boss
+  - Monter
   - 
   - 
   - 
@@ -40,4 +40,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BackGround
+    uniqueID: 3954740789
+    locked: 0
+  - name: Monter
+    uniqueID: 2886503857
+    locked: 0
+  - name: Boss
+    uniqueID: 2408269347
+    locked: 0
+  - name: Boss_Dragon_Fire
+    uniqueID: 701355079
+    locked: 0
+  - name: Player
+    uniqueID: 3028810133
     locked: 0

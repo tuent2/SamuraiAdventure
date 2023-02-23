@@ -2,17 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-public class Player : MonoBehaviour
+public class PlayerSamurai : MonoBehaviour
 {
     Vector2 moveInput;
     Rigidbody2D myRigidbody;
     Animator myAnimator;
+    CapsuleCollider2D mySword;
     [SerializeField] float moveSpeed = 3f;
     [SerializeField] float disRun = 6f;
 
     void Awake() {
         myRigidbody = gameObject.GetComponent<Rigidbody2D>();
         myAnimator = gameObject.GetComponent<Animator>();
+        mySword = gameObject.GetComponent<CapsuleCollider2D>();
     }
     void Start()
     {
@@ -65,7 +67,12 @@ public class Player : MonoBehaviour
         }
     }
 
-    
+    void AttackEnemy(){
+        if (!mySword.IsTouchingLayers(LayerMask.GetMask("Boss")))
+        {
+            
+        }
+    }
 
     void FlipSprite(){
         bool playerIsMoving = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
