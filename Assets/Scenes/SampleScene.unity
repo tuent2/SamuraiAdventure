@@ -953,7 +953,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1022983075}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -2030,6 +2030,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1451539426, guid: 5da627bec0b70f547b814f0e7a6b31e0, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1451539426, guid: 5da627bec0b70f547b814f0e7a6b31e0, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1451539427, guid: 5da627bec0b70f547b814f0e7a6b31e0, type: 3}
       propertyPath: player
       value: 
@@ -2078,6 +2086,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936428567722834431, guid: 5da627bec0b70f547b814f0e7a6b31e0, type: 3}
+      propertyPath: m_TagString
+      value: DragonMouth
+      objectReference: {fileID: 0}
     - target: {fileID: 5518190423137330352, guid: 5da627bec0b70f547b814f0e7a6b31e0, type: 3}
       propertyPath: m_Name
       value: Boss_Dragon
@@ -2091,6 +2103,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 925660504, guid: ee51d3b5c08414e42b0136007c61a929, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8663309367692847521, guid: ee51d3b5c08414e42b0136007c61a929, type: 3}
       propertyPath: m_Name
       value: Boss_Dragon_Fire
@@ -2101,11 +2117,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8663309367692847522, guid: ee51d3b5c08414e42b0136007c61a929, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.02
+      value: 8.45
       objectReference: {fileID: 0}
     - target: {fileID: 8663309367692847522, guid: ee51d3b5c08414e42b0136007c61a929, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.9
+      value: -3.78
       objectReference: {fileID: 0}
     - target: {fileID: 8663309367692847522, guid: ee51d3b5c08414e42b0136007c61a929, type: 3}
       propertyPath: m_LocalPosition.z
