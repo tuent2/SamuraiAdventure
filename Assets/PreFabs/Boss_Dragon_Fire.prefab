@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 925660504}
   - component: {fileID: 925660503}
   - component: {fileID: 925660505}
+  - component: {fileID: 1613525351}
   m_Layer: 0
   m_Name: Boss_Dragon_Fire
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 8663309367692847521}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.13, y: -0.91, z: -0.00974728}
-  m_LocalScale: {x: 1.0965, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -128,7 +129,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &925660503
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -167,4 +168,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4d10124d6000974d9dff9abecc06348, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FireSpeed: 5
+  FireSpeed: 0.2
+--- !u!114 &1613525351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8663309367692847521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae1353363a16e814db3d98d41c004647, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  isFlipped: 0

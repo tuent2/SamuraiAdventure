@@ -2103,10 +2103,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 925660504, guid: ee51d3b5c08414e42b0136007c61a929, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
+    - target: {fileID: 1613525351, guid: ee51d3b5c08414e42b0136007c61a929, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1022983078}
     - target: {fileID: 8663309367692847521, guid: ee51d3b5c08414e42b0136007c61a929, type: 3}
       propertyPath: m_Name
       value: Boss_Dragon_Fire
