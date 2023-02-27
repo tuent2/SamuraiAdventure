@@ -13,4 +13,9 @@ public class Damage : MonoBehaviour
     void SetDamage(int value){
         damage = value;
     }
+
+    public void Hit(){
+        Destroy(gameObject);
+    }
+
 }

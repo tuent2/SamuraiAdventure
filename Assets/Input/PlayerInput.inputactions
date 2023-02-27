@@ -69,7 +69,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Jump",
+                    "name": "SkillSpace",
                     "type": "Button",
                     "id": "83df05d0-d2f8-4ff3-9477-335f1c3f312d",
                     "expectedControlType": "Button",
@@ -350,7 +350,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Jump",
+                    "action": "SkillSpace",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

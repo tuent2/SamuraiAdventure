@@ -8,8 +8,10 @@ public class PlayerSamurai : MonoBehaviour
     Rigidbody2D myRigidbody;
     Animator myAnimator;
     CapsuleCollider2D mySword;
+
     [SerializeField] float moveSpeed = 3f;
     [SerializeField] float disRun = 6f;
+    [SerializeField] int mySwordDamage = 10;
 
     void Awake() {
         myRigidbody = gameObject.GetComponent<Rigidbody2D>();
@@ -47,6 +49,9 @@ public class PlayerSamurai : MonoBehaviour
         myAnimator.SetTrigger("UsingF");
     }
 
+    void OnSkillSpace(InputValue inputValue){
+        myAnimator.SetBool("UsingSpace",true);
+    }
 
     void OnWalking(){
         
@@ -68,9 +73,9 @@ public class PlayerSamurai : MonoBehaviour
     }
 
     void AttackEnemy(){
-        if (!mySword.IsTouchingLayers(LayerMask.GetMask("Boss")))
+        if (mySword.IsTouchingLayers(LayerMask.GetMask("Boss")))
         {
-            
+            Debug.Log("hit ");
         }
     }
 
